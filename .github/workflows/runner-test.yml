@@ -4,6 +4,9 @@ jobs:
   test:
     runs-on: [self-hosted, windows]
     steps:
-      - run: |
+      - name: Show machine info
+        shell: cmd
+        run: |
+          echo Runner is working
           hostname
-          whoami
+          echo %USERNAME%
