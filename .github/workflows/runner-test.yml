@@ -1,0 +1,9 @@
+name: runner-test
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: [self-hosted, windows]
+    steps:
+      - run: |
+          hostname
+          whoami
